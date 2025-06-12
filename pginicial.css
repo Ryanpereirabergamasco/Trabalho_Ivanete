@@ -1,0 +1,481 @@
+/* Complemento CSS */
+
+
+
+
+html {
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: navy;
+    margin: 0;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+    padding-top: -10px;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 0;
+}
+
+.titulo {
+    margin: 20px;
+}
+
+.botaoCabecario {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 9px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+
+}
+
+.botaoCabecario:hover {
+    /*transform: translateY(-5px);*/
+    background-color: rgb(227, 227, 227);
+    color: white;
+}
+
+
+.botaoCabecario1 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    background-color: darkblue;
+    cursor: pointer;
+
+}
+
+.botaoCabecario1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+/* Estilo para as áreas de card e informações na página inicial */
+.areaPrincipal {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 270px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: navy;
+}
+
+.card p {
+    font-size: 18px;
+    color: #555;
+}
+
+.card button {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: darkblue;
+}
+
+/* Seção Sobre a Empresa */
+.sobreEmpresa {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sobreEmpresa h2 {
+    font-size: 32px;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.sobreEmpresa p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobreEmpresa .btn-sobre {
+    background-color: navy;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sobreEmpresa .btn-sobre:hover {
+    background-color: darkblue;
+}
+
+/* Seção de Notificações */
+.notificacoes {
+    margin-top: 40px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.notificacoes h2 {
+    font-size: 28px;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.notificacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notificacoes ul li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.notificacoes ul li i {
+    color: darkblue;
+    margin-right: 10px;
+}
+
+/* Complemento para o Popup */
+#popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+}
+
+#popupOverlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#popupOverlay.show #popup {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#popup h2 {
+    margin-top: 0;
+}
+
+#popup button {
+    margin-top: 20px;
+    background-color: navy;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#popup button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+/* Complemento para Barra Lateral 
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: none;
+}
+
+.menu-lateral a:hover {
+    background-color: rgba(0, 0, 0, 0.152);
+}
+
+/* Link do menu */
+.botoesMenu {
+    margin-top: 23px;
+}
+
+.botaoCabecario1 {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.botaoCabecario1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+/* Estilo do footer */
+footer {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Estilo para a parte de baixo */
+.partedebaixo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000; /* sobrepõe tudo */
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+
+
+  }
+  
+
+  .botoesMenu{
+margin-top: 23px;
+  }
+  /* Links do menu */
+  .menu-lateral a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .menu-lateral a:hover {
+    background-color: rgba(0, 0, 0, 0.152);;
+  }
+  
+  /* Botão de fechar */
+  .menu-lateral .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+  }
+
+  .menu-lateral .Config {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 28px;
+    padding: 4px 8px;
+    display: inline-block;
+    
+  }
+    .configimg {
+      width: 30px; 
+      height: 30px;
+      border-radius: 50%;
+}
+  
+.menu-lateral .Voltar {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+    display: inline-block;
+    
+  }
+    .voltarimg {
+      width: 20px; 
+      height: 20px;
+      border-radius: 50%;
+}
+
+  .menu-lateral .Sair { 
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    font-size: 30px;
+    padding: 8px 8px;
+    display: inline-block;
+
+}
+.sairimg{
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+}
+
+  
+  
+  /* Botão que abre o menu (exemplo) */
+  .botaoMenu {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .botaolateral{
+
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.068);
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px white solid;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;    
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  
+
+.subtitulo{
+font-weight: 600;
+font-size: 30px;
+text-align: center;
+margin-top: 100px;
+
+}
+
+  /*Barra Lateral*/
+  

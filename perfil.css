@@ -1,0 +1,134 @@
+/* Ajustes na seção de perfil */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px; /* Para que o conteúdo não fique muito próximo do topo */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fotodeperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imagemPerfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid navy;
+    margin-bottom: 15px;
+    object-fit: cover; /* Garante que a imagem não distorça */
+}
+
+.Nomeusuario {
+    font-size: 24px;
+    font-weight: bold;
+    color: navy;
+    margin-top: 10px;
+}
+
+/* Estilo para informações da conta */
+.dadosConta {
+    text-align: left;
+    font-size: 18px;
+    width: 60%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.dadosConta h2 {
+    font-size: 28px;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.dadosConta p {
+    margin: 10px 0;
+}
+
+/* Estilo para botões de ação */
+.acoesConta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botaoSaibamais {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botaoSaibamais:hover {
+    background-color: darkblue;
+}
+
+/* Ajustes no menu lateral */
+.menu-lateral {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.menu-lateral a:hover {
+    background-color: rgba(0, 0, 0, 0.152);
+}
+
+.menu-lateral .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .dadosConta {
+        width: 80%;
+    }
+
+    .acoesConta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imagemPerfil {
+        width: 120px;
+        height: 120px;
+    }
+}

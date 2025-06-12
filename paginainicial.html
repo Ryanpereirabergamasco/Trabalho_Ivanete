@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pginicial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js"></script>
+    <title>Soft Engine</title>
+</head>
+
+<header>
+    <div class="cabecario">
+        <a href="index.html" style="text-decoration: none; color: navy;"><h1 class="titulo"> Soft Engine <img src="img/Logo.png" width="40px" height="40px" alt="Logo"></h1></a>
+        <ul class="botoesCabecario">
+            <button onclick="abrirMenuNotficacao()" class="botaoCabecario">
+                <img src="img/bell.svg" alt="Ícone de Notificação" style="width: 15px; height: 17px;"/>
+            </button>
+            
+            <button onclick="abrirMenu()" class="botaoCabecario1">☰</button>
+        </ul>
+    </div>
+
+    <div id="menuLateral" class="menu-lateral">
+        <a href="#" class="fechar" onclick="fecharMenu()">×</a>
+        <a href="perfil.html" class="Config"><img src="img/fotoperfil.png" alt="config" class="configimg"></a>
+        <a href="index.html" class="Sair"><img src="img/sair.png" alt="config" class="sairimg"></a>
+        <div class="botoesMenu">
+            <a href="vendas.html" class="botaolateral">Vendas</a>
+            <a href="financeiro.html" class="botaolateral">Financeiro</a>
+            <a href="relatorios.html" class="botaolateral">Relatórios</a>
+            <a href="inventario.html" class="botaolateral">Inventário</a>
+        </div>
+    </div>
+
+    <div id="menuLateralnotificacao" class="menu-lateral">
+        <a href="#" class="fechar" onclick="fecharMenuNotficacao()">×</a>
+        <a class="Config">Notificações</a>
+        <div class="botoesMenu">
+            <a class="botaolateral"><i class="fas fa-info-circle"></i> Nova atualização de sistema disponível!</a>
+            <a class="botaolateral"><i class="fas fa-check-circle"></i> Relatório de vendas atualizado.</a>
+            <a class="botaolateral"><i class="fas fa-exclamation-circle"></i> Verifique o saldo de contas a pagar.</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="textoPrincipal">
+            <h1 class="titulopginicial">Bem-vindo de volta, <strong>Usuário!</strong></h1>
+            <p class="subtitulo">Aqui está um resumo rápido das suas operações.</p>
+        </div>
+
+        <section class="areaPrincipal">
+            <div class="informacoes">
+                <div class="card">
+                    <h3>Resumo de Vendas</h3>
+                    <p>Última venda: R$ 1.500,00</p>
+                    <button class="btn-card" onclick="window.location.href='vendas.html'">Ver mais</button>
+                </div>
+                <div class="card">
+                    <h3>Fluxo de Caixa</h3>
+                    <p>Saldo atual: R$ 20.000,00</p>
+                    <button class="btn-card" onclick="window.location.href='financeiro.html'">Ver mais</button>
+                </div>
+                <div class="card">
+                    <h3>Relatórios Recentes</h3>
+                    <p>Relatório de 2025 disponível.</p>
+                    <button class="btn-card" onclick="window.location.href='relatorios.html'">Ver mais</button>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+    </main>
+</body>
+
+</html>

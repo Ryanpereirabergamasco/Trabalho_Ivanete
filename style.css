@@ -1,0 +1,547 @@
+html {
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: navy;
+    margin: 0;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+    padding-top: -10px;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 0;
+}
+
+.titulo {
+    margin: 20px;
+}
+
+.botaoCabecario {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.botaoCabecario:hover {
+    /*transform: translateY(-5px);*/
+    background-color: darkblue;
+    color: white;
+}
+
+
+.botaoCabecario1 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.botaoCabecario1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+
+.textoPrincipal {
+    width: 50%;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 5%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tituloParagrafo {
+    font-size: 70px;
+    color: blue;
+}
+
+.titulopginicial {
+    font-size: 30px;
+    color: rgb(0, 0, 67);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.imagemPrincipal {
+    transform: scale(0.9);
+    margin-top: 18%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+button {
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.botaoSaibamais {
+    text-decoration: none;
+    padding: 10px;
+    width: 50%;
+    height: 15%;
+    text-align: left;
+    background-image: linear-gradient(blue, navy);
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.botaoSaibamais,
+.botaoEntrar {
+    transition: 0.4s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botaoSaibamais:hover {
+width: 55%;
+background-image: none;
+background-color: white;
+color: black;
+border: 2px solid blue;
+box-shadow: 0 0 10px black;
+}
+
+.botaoEntrar:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+footer {    
+    background-color: navy;
+    color: white;
+}
+
+
+span {
+    color: navy;
+}
+
+.botaoEntrar {
+    padding: 10px;
+    width: 20%;
+    height: 15%;
+    background-color: white;
+    border: navy 3px solid;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+aside {
+    background-color: navy;
+    border-radius: 20px;
+}
+
+.texto2{
+margin: auto;
+margin-top: 5%;
+font-size: 30px;
+font-weight: bold;
+background-color: navy;
+padding: 10px;
+color: white;
+width: 100%;
+text-align: center;
+font-size: 40px;
+box-sizing: border-box;
+}
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(navy,blue);
+    height: 625px;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+
+  
+}
+
+.card1, .card2, .card3{
+font-size: 15px;
+margin: 10px;
+border: 3px solid black;
+border-radius: 5px;
+padding: 10px; 
+transition: 0.2s ease;
+box-shadow: 0 0 5px black;
+background-color: white;
+}
+
+.textocard{
+width: 190px;
+}
+
+.imagemcard{
+width: 100px;
+height: 100px;
+padding: 10px;
+}
+
+
+.card1:hover, .card2:hover, .card3:hover{
+transform: translateY(-10px);
+background-image: linear-gradient(navy, black);
+transition: 0.2s;
+color: white;
+}
+
+.botaoContato {
+    background-color: navy;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botaoContato:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+ 
+
+.partedebaixo{
+
+    display: flex;
+    justify-content: center;
+    padding: 10px; background-color: navy;
+    color: white;
+    height: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+
+/*Popup Entre em contato*/
+
+#popupOverlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Animação */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9999;
+  }
+  
+  #popupOverlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #popup {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    max-width: 400px;
+    text-align: center;
+  
+    /* Animação */
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #popupOverlay.show #popup {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  #popup h2 {
+    margin-top: 0;
+  }
+
+
+  #popup button {
+    margin-top: 20px;
+    background-color: navy;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#popup button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+  /*Fim do Popup Entre em contato*/
+
+
+
+  /*Barra Lateral*/
+
+/* Estilo do menu lateral (inicialmente escondido) */
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000; /* sobrepõe tudo */
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+
+
+  }
+  
+
+  .botoesMenu{
+margin-top: 23px;
+  }
+  /* Links do menu */
+  .menu-lateral a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .menu-lateral a:hover {
+    background-color: rgba(0, 0, 0, 0.152);;
+  }
+  
+  /* Botão de fechar */
+  .menu-lateral .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+  }
+
+  .menu-lateral .Config {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+    display: inline-block;
+    
+  }
+    .configimg {
+      width: 30px; 
+      height: 30px;
+      border-radius: 50%;
+}
+  
+.menu-lateral .Voltar {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+    display: inline-block;
+    
+  }
+    .voltarimg {
+      width: 20px; 
+      height: 20px;
+      border-radius: 50%;
+}
+
+  .menu-lateral .Sair { 
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    font-size: 30px;
+    padding: 8px 8px;
+    display: inline-block;
+
+}
+.sairimg{
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+}
+
+  
+  
+  /* Botão que abre o menu (exemplo) */
+  .botaoMenu {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .botaolateral{
+
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.068);
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px white solid;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;    
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  
+
+
+
+  /*Barra Lateral*/
+  
+  
+  
+  .fotodeperfil {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;      
+    width: 100%;             
+    height: 200px;        
+    flex-direction: column;  
+    font-size: 30px;
+
+  }
+  .Nomeusuario{
+    margin-top: 20px;
+  }
+  .fotodeperfil img {
+    width: 200px;            
+    height: 200px;           
+    border-radius: 50%;     
+    display: block; 
+    margin-top: 230px;         
+  
+  }
+
+.boxGeral{
+    width: 300px;
+    background-color: navy; 
+    text-align: center;
+    margin: 100px auto;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    
+  } 
+
+  .boxVenda{
+ 
+      a{
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: black;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 10px auto;
+      margin-right: 40px;
+      transition: 0.2s ease;
+      font-weight: 600;
+    }
+
+    a:hover{
+    background-color: navy;
+    color: white;
+    transition: 0.3s ease;
+    border: 2px solid white;
+    transform: scale(1.05);
+  }
+  }
+
+/*ATENÇÃO, AREA DO CHAT*/
+
+
+/*ATENÇÃO, FIM DA AREA DO CHAT*/
+.notfic{
+
+  
+}

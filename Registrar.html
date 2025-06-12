@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soft Engine</title>
+</head>
+<header>
+    <div class="cabecario">
+        <a href="index.html" style="text-decoration: none; color: navy;"><h1 class="titulo"> Soft Engine <img src="img/Logo.png"
+                width="40px" height="40px" alt="Logo"></h1></a>
+                        <a href="index.html"><button class="botaoCabecario1"> Voltar</button></a>
+
+</header>
+
+<style>
+    body{
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .tela_login{
+        background-color: rgba(230, 230, 230, 0.8);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        border-radius: 15px;
+    }
+
+    .Texto{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+
+
+    }
+
+    .Botões{
+        background-color: navy;
+        outline: none;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px white solid;
+        box-shadow: 0 0 10px black;
+        transition: 0.3s ease;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .Botões:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+
+</style>
+
+<body>
+    <div class="tela_login">
+        <h1>Registrar</h1>
+        <input class="Texto" type="text" placeholder="Nome">
+        <br><br>
+        <input class="Texto" type="email" placeholder="Email">
+        <br><br>
+        <input class="Texto" type="password" placeholder="Senha">
+        <br><br>
+        <a href="login.html"><button class="Botões">Confirmar</button></a>
+
+    </div>
+</body>

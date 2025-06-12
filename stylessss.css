@@ -1,0 +1,320 @@
+html {
+    /*font-family: Arial;*/
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.cabecario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: navy;
+    margin: 0;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+    padding-top: -10px;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    padding: 0;
+}
+
+.titulo {
+    margin: 20px;
+}
+
+.botaoCabecario {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.botaoCabecario:hover {
+    /*transform: translateY(-5px);*/
+    background-color: darkblue;
+    color: white;
+}
+
+
+.botaoCabecario1 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0 0 10px black;
+    transition: 0.3s ease;
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.botaoCabecario1:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px rgb(4, 4, 249) solid;
+    transform: scale(1.1);
+}
+/*Barra Lateral*/
+
+/* Estilo do menu lateral (inicialmente escondido) */
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000; /* sobrepõe tudo */
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px black;
+
+
+  }
+  
+
+  .botoesMenu{
+margin-top: 23px;
+  }
+  /* Links do menu */
+  .menu-lateral a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .menu-lateral a:hover {
+    background-color: rgba(0, 0, 0, 0.152);;
+  }
+  
+  /* Botão de fechar */
+  .menu-lateral .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+  }
+
+  .menu-lateral .Config {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+    display: inline-block;
+    
+  }
+    .configimg {
+      width: 30px; 
+      height: 30px;
+      border-radius: 50%;
+}
+  
+.menu-lateral .Voltar {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 30px;
+    padding: 4px 8px;
+    display: inline-block;
+    
+  }
+    .voltarimg {
+      width: 20px; 
+      height: 20px;
+      border-radius: 50%;
+}
+
+  .menu-lateral .Sair { 
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+    font-size: 30px;
+    padding: 8px 8px;
+    display: inline-block;
+
+}
+.sairimg{
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+}
+
+  
+  
+  /* Botão que abre o menu (exemplo) */
+  .botaoMenu {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .botaolateral{
+
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.068);
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px white solid;
+    transition: 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;    
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  
+
+
+
+  /*Barra Lateral*/
+/* Seção do Perfil */
+.perfilMain {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 150px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.fotoEInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.fotodeperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.imagemPerfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid navy;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.Nomeusuario {
+    font-size: 24px;
+    font-weight: bold;
+    color: navy;
+}
+
+.dadosConta {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.dadosConta h2 {
+    font-size: 28px;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.dadosConta p {
+    margin: 10px 0;
+}
+
+/* Ações do perfil */
+.acoesConta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 27%;
+    align-items: flex-end;
+    
+}
+
+.botaoSaibamais {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botaoSaibamais:hover {
+    background-color: darkblue;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotoEInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imagemPerfil {
+        width: 120px;
+        height: 120px;
+    }
+
+}

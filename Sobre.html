@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soft Engine - Saiba Mais</title>
+
+    <style>
+        /* Resetando margens e padding padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo da página */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            animation: slideIn 0.6s ease-in-out;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Cabeçalho */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 80px; /* Ajusta a altura do cabeçalho */
+}
+
+        .titulo {
+            font-size: 28px;
+            color: #1e3a8a;
+            display: flex;
+            align-items: center;
+        }
+
+        .titulo img {
+            margin-left: 10px;
+        }
+
+        /* Menu superior com os botões de soluções, registrar e login */
+        .menu-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu-buttons button {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .menu-buttons button:hover {
+            background-color: #334eab;
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 40px 20px;
+            margin-top: 100px; /* Espaço para o cabeçalho fixo */
+        }
+
+        .textoPrincipalsobre {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tituloParagrafo1 {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .paragrafo {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .subtitulo {
+            font-size: 24px;
+            color: #1e3a8a;
+            margin-top: 20px;
+        }
+
+        ul {
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .titulo {
+                font-size: 20px;
+            }
+
+            .botaoCabecario1 {
+                margin-top: 10px;
+            }
+
+            .menu-buttons {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .textoPrincipalsobre {
+                padding: 20px;
+            }
+
+            .tituloParagrafo1 {
+                font-size: 28px;
+            }
+
+            .paragrafo {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecario">
+            <a href="index.html" style="text-decoration: none; color: navy;"><h1 class="titulo"> Soft Engine <img src="img/Logo.png" width="40px" height="40px" alt="Logo Soft Engine"></h1></a>
+            <a href="index.html">
+                <button class="botaoCabecario1">Voltar</button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="textoPrincipalsobre">
+            <h1 class="tituloParagrafo1">Saiba Mais sobre a Soft Engine</h1>
+            <p class="paragrafo">
+                A <strong>Soft Engine</strong> é uma empresa inovadora especializada em soluções de ERP (Enterprise Resource Planning),
+                com foco em transformar a gestão de sua empresa. Com nossa plataforma, oferecemos uma solução completa, que integra
+                todas as áreas do seu negócio de forma simples e eficiente.
+            </p>
+
+            <p class="paragrafo">
+                Nossa missão é tornar as empresas mais ágeis, eficientes e produtivas, permitindo que gestores tomem decisões mais
+                informadas e rápidas. Nossa tecnologia ajuda a automatizar processos, reduzir custos e melhorar a comunicação
+                entre os setores da empresa.
+            </p>
+
+            <h2 class="subtitulo">O que é um ERP?</h2>
+            <p class="paragrafo">
+                Um ERP é um sistema de gestão empresarial que integra todos os processos e departamentos de uma empresa. Através
+                de um único software, sua organização pode controlar áreas como finanças, vendas, produção, inventário, entre outras,
+                garantindo mais controle e visibilidade sobre todos os processos.
+            </p>
+
+            <h2 class="subtitulo">Vantagens do nosso ERP</h2>
+            <ul>
+                <li>Automação de processos repetitivos.</li>
+                <li>Redução de erros humanos.</li>
+                <li>Melhora na tomada de decisões com base em dados em tempo real.</li>
+                <li>Integração total entre os setores.</li>
+                <li>Suporte contínuo e atualizações regulares.</li>
+            </ul>
+
+            <h2 class="subtitulo">Como funciona?</h2>
+            <p class="paragrafo">
+                O ERP da Soft Engine é baseado em tecnologia de ponta e acessível a empresas de todos os tamanhos. Após a implementação,
+                sua equipe será treinada para utilizar todas as funcionalidades de forma eficiente, com o suporte contínuo da nossa
+                equipe técnica.
+            </p>
+
+            <h2 class="subtitulo">Quer saber mais?</h2>
+            <p class="paragrafo">
+                Se você está interessado em saber como a <strong>Soft Engine</strong> pode transformar o seu negócio, entre em
+                contato conosco. Estamos prontos para ajudar a sua empresa a alcançar novos níveis de produtividade.
+            </p>
+
+            <button class="botaoContato" id="btnContato">Entre em Contato</button>
+            
+        </div>
+    </main>
+
+<div id="popupOverlay">
+    <div id="popup">
+      <h2>Fale Conosco</h2>
+      <p><strong>Telefone:</strong> (11) 91234-5678</p>
+      <p><strong>Email:</strong> contato@softengine.com</p>
+      <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado</p>
+      <button onclick="fecharPopup()">Fechar</button>
+    </div>
+  </div>
+
+  
+<script>
+  const btn = document.getElementById('btnContato');
+  const overlay = document.getElementById('popupOverlay');
+
+  btn.addEventListener('click', () => {
+    overlay.classList.add('show');
+  });
+
+  function fecharPopup() {
+    overlay.classList.remove('show');
+  }
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) {
+      fecharPopup();
+    }
+  });
+</script>
+      
+</body>
+
+</html>
